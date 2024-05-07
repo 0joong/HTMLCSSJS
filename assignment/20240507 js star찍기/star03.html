@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = prompt("값을 입력하세요:");
+        let output = "";
+
+        num = parseInt(num);
+        for (let i = 0; i < num; i++) {
+            for (let e = 0; e < num - i - 1; e++) {
+                output += " ";
+            }
+            for (let j = 0; j <= i; j++) {
+                output += "*";
+            }
+            output += "\n";
+        }
+        alert(output);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
